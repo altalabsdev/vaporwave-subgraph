@@ -1,0 +1,24 @@
+{
+  "aurora": {
+    "OrderBook": {
+      "address": "",
+      "startBlock": 0
+    },
+    "BatchSender": {
+      "address": "",
+      "startBlock": 0
+    },
+    "PositionManager": {
+      "address": "",
+      "startBlock": 0
+    },
+    "PositionRouter": {
+      "address": "",
+      "startBlock": 0
+    },
+    "ReferralStorage": {
+      "address": "",
+      "startBlock": 0
+    }
+  }
+}

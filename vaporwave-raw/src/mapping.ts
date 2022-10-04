@@ -1,7 +1,7 @@
-import { BigInt, ethereum } from "@graphprotocol/graph-ts";
-import * as vault from "../generated/Vault/Vault";
-import * as vlpManager from "../generated/VlpManager/VlpManager";
-import * as rewardRouter from "../generated/RewardRouterV2/RewardRouterV2";
+import { BigInt, ethereum } from '@graphprotocol/graph-ts';
+import * as vault from '../generated/Vault/Vault';
+import * as vlpManager from '../generated/VlpManager/VlpManager';
+import * as rewardRouter from '../generated/RewardRouterV2/RewardRouterV2';
 import {
   CollectMarginFee,
   CollectSwapFee,
@@ -17,7 +17,7 @@ import {
   UnstakeVwave,
   StakeVlp,
   UnstakeVlp,
-} from "../generated/schema";
+} from '../generated/schema';
 
 function _createTransactionIfNotExist(event: ethereum.Event): string {
   let id = event.transaction.hash.toHexString();
@@ -165,7 +165,7 @@ export function handleAddLiquidity(event: vlpManager.AddLiquidity): void {
   entity.amount = event.params.amount;
   entity.aumInUsdg = event.params.aumInUsdg;
   entity.vlpSupply = event.params.vlpSupply;
-  entity.usdgAmount = event.params.usdgAmount;
+  entity.usdAmount = event.params.usdAmount;
   entity.mintAmount = event.params.mintAmount;
 
   entity.transaction = _createTransactionIfNotExist(event);
@@ -182,7 +182,7 @@ export function handleRemoveLiquidity(event: vlpManager.RemoveLiquidity): void {
   entity.vlpAmount = event.params.vlpAmount;
   entity.aumInUsdg = event.params.aumInUsdg;
   entity.vlpSupply = event.params.vlpSupply;
-  entity.usdgAmount = event.params.usdgAmount;
+  entity.usdAmount = event.params.usdAmount;
   entity.amountOut = event.params.amountOut;
 
   entity.transaction = _createTransactionIfNotExist(event);

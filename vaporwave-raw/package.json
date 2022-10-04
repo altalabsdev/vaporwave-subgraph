@@ -3,11 +3,10 @@
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
-    "build": "graph build",
+    "build": "graph build --network aurora",
     "deploy-test": ""
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.21.1",
-    "@graphprotocol/graph-ts": "0.20.0"
+    "@graphprotocol/graph-ts": "^0.27.0"
   }
 }

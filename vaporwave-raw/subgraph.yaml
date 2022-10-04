@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -6,12 +6,12 @@ dataSources:
     name: RewardRouterV2
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: RewardRouterV2
       startBlock: 8351228
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - StakeVwave
@@ -37,11 +37,11 @@ dataSources:
     network: aurora
     source:
       startBlock: 8351228
-      address: ""
+      address: ''
       abi: Vault
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         # - BuyUSDV

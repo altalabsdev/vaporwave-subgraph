@@ -1,0 +1,12 @@
+{
+  "name": "vaporwave-prices",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build --network aurora",
+    "deploy-test": ""
+  },
+  "dependencies": {
+    "@graphprotocol/graph-ts": "^0.27.0"
+  }
+}

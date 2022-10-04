@@ -5,10 +5,9 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy-test": "",
-    "deploy-prod": ""
+    "deploy-prod": "graph codegen && graph deploy --product hosted-service vaporwave/vaporwave-referrals"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.21.1",
-    "@graphprotocol/graph-ts": "0.20.0"
+    "@graphprotocol/graph-ts": "^0.27.0"
   }
 }

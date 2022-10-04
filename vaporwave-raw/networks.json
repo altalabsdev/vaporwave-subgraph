@@ -1,0 +1,12 @@
+{
+  "aurora": {
+    "RewardRouterV2": {
+      "address": "",
+      "startBlock": 0
+    },
+    "Vault": {
+      "address": "",
+      "startBlock": 0
+    }
+  }
+}

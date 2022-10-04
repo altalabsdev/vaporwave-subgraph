@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -6,12 +6,12 @@ dataSources:
     name: OrderBook
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: OrderBook
       startBlock: 13065036
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - ExecuteDecreaseOrder
@@ -27,12 +27,12 @@ dataSources:
     name: BatchSender
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: BatchSender
       startBlock: 13065036
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - BatchSend
@@ -48,7 +48,7 @@ dataSources:
     name: PositionManager
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: PositionManager
       startBlock: 13065036
     mapping:
@@ -72,12 +72,12 @@ dataSources:
     name: PositionRouter
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: PositionRouter
       startBlock: 13065036
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - IncreasePositionReferral
@@ -96,12 +96,12 @@ dataSources:
     name: ReferralStorage
     network: aurora
     source:
-      address: ""
+      address: ''
       abi: ReferralStorage
       startBlock: 13065036
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - GovSetCodeOwner
